@@ -20,9 +20,9 @@ export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const variantStyles: Record<NonNullable<CardProps['variant']>, string> = {
-  default: 'bg-white',
-  bordered: 'bg-white border border-gray-200',
-  elevated: 'bg-white shadow-lg',
+  default: 'bg-[var(--bg-primary)]',
+  bordered: 'bg-[var(--bg-primary)] border border-[var(--border-color)]',
+  elevated: 'bg-[var(--bg-primary)] shadow-lg',
 };
 
 const paddingStyles: Record<NonNullable<CardProps['padding']>, string> = {
@@ -68,9 +68,9 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
           />
         )}
         <div className={paddingStyles[padding]}>
-          <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+          <h3 className="text-lg font-semibold text-[var(--text-primary)]">{title}</h3>
           {description && (
-            <p className="mt-1 text-sm text-gray-500">{description}</p>
+            <p className="mt-1 text-sm text-[var(--text-secondary)]">{description}</p>
           )}
           {children && <div className="mt-3">{children}</div>}
         </div>

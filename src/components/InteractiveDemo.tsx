@@ -17,30 +17,42 @@ const componentMap: Record<string, any> = {
   card: Card,
 }
 
-const enumOptions: Record<string, string[]> = {
-  variant: ['primary', 'secondary', 'outline', 'ghost'],
-  size: ['sm', 'md', 'lg'],
-  type: ['text', 'password', 'email', 'number'],
-  padding: ['none', 'sm', 'md', 'lg'],
+const enumOptions: Record<string, Record<string, string[]>> = {
+  button: {
+    variant: ['primary', 'secondary', 'outline', 'ghost'],
+    size: ['sm', 'md', 'lg'],
+  },
+  input: {
+    size: ['sm', 'md', 'lg'],
+    type: ['text', 'password', 'email', 'number'],
+  },
+  card: {
+    variant: ['default', 'bordered', 'elevated'],
+    padding: ['none', 'sm', 'md', 'lg'],
+  },
 }
 
 function PropControl({
+  componentName,
   name,
   value,
   onChange,
 }: {
+  componentName: string
   name: string
   value: any
   onChange: (val: any) => void
 }) {
-  if (enumOptions[name]) {
+  const options = enumOptions[componentName]?.[name]
+
+  if (options) {
     return (
       <select
         value={value ?? ''}
         onChange={(e) => onChange(e.target.value)}
         className="w-full px-2 py-1.5 text-sm rounded-lg border border-[var(--border-color)] bg-[var(--bg-primary)] text-[var(--text-primary)]"
       >
-        {enumOptions[name].map((opt) => (
+        {options.map((opt) => (
           <option key={opt} value={opt}>
             {opt}
           </option>
@@ -159,6 +171,7 @@ export function InteractiveDemo({ componentName, examples }: InteractiveDemoProp
                   {key}
                 </label>
                 <PropControl
+                  componentName={componentName}
                   name={key}
                   value={value}
                   onChange={(val) => handlePropChange(key, val)}

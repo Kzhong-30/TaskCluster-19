@@ -1,5 +1,5 @@
 import { compileMDX } from 'next-mdx-remote/rsc'
-import { readFileSync } from 'fs'
+import { readFile } from 'fs/promises'
 import { resolve } from 'path'
 
 interface MDXContentProps {
@@ -10,7 +10,7 @@ export async function MDXContent({ docPath }: MDXContentProps) {
   const fullPath = resolve(process.cwd(), docPath)
   let source: string
   try {
-    source = readFileSync(fullPath, 'utf-8')
+    source = await readFile(fullPath, 'utf-8')
   } catch {
     return <p className="text-[var(--text-tertiary)] text-sm">文档内容加载失败</p>
   }

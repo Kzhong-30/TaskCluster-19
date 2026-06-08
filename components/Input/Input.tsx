@@ -57,7 +57,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         {label && (
           <label
             htmlFor={inputId}
-            className={['font-medium text-gray-700', labelSizeStyles[size]].join(' ')}
+            className={['font-medium text-[var(--text-primary)]', labelSizeStyles[size]].join(' ')}
           >
             {label}
           </label>
@@ -71,10 +71,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           placeholder={placeholder}
           disabled={disabled}
           className={[
-            'rounded-lg border border-gray-300 bg-white text-gray-900 placeholder-gray-400 transition-colors duration-150 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20',
+            'rounded-lg border border-[var(--border-color)] bg-[var(--bg-primary)] text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] transition-colors duration-150 focus:border-[var(--primary-500)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-500)]/20',
             sizeStyles[size],
             error ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20' : '',
-            disabled ? 'cursor-not-allowed bg-gray-100 opacity-50' : '',
+            disabled ? 'cursor-not-allowed bg-[var(--bg-tertiary)] opacity-50' : '',
             className,
           ]
             .filter(Boolean)
