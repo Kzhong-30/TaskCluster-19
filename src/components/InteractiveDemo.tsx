@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, createElement } from 'react'
+import { useState, createElement, useMemo } from 'react'
 import type { ExampleConfig } from '@/data/components'
+import propsData from '@/data/props-extracted.json'
 import Button from '@components/Button/Button'
 import Input from '@components/Input/Input'
 import Card from '@components/Card/Card'
@@ -17,19 +18,17 @@ const componentMap: Record<string, any> = {
   card: Card,
 }
 
-const enumOptions: Record<string, Record<string, string[]>> = {
-  button: {
-    variant: ['primary', 'secondary', 'outline', 'ghost'],
-    size: ['sm', 'md', 'lg'],
-  },
-  input: {
-    size: ['sm', 'md', 'lg'],
-    type: ['text', 'password', 'email', 'number'],
-  },
-  card: {
-    variant: ['default', 'bordered', 'elevated'],
-    padding: ['none', 'sm', 'md', 'lg'],
-  },
+function buildEnumOptions(data: typeof propsData): Record<string, Record<string, string[]>> {
+  const result: Record<string, Record<string, string[]>> = {}
+  for (const [compKey, props] of Object.entries(data)) {
+    result[compKey] = {}
+    for (const prop of props as { name: string; type: string; enumValues?: string[] }[]) {
+      if (prop.enumValues && prop.enumValues.length > 0) {
+        result[compKey][prop.name] = prop.enumValues
+      }
+    }
+  }
+  return result
 }
 
 function PropControl({
@@ -37,14 +36,14 @@ function PropControl({
   name,
   value,
   onChange,
+  options,
 }: {
   componentName: string
   name: string
   value: any
   onChange: (val: any) => void
+  options: string[] | undefined
 }) {
-  const options = enumOptions[componentName]?.[name]
-
   if (options) {
     return (
       <select
@@ -105,6 +104,8 @@ export function InteractiveDemo({ componentName, examples }: InteractiveDemoProp
   const [currentProps, setCurrentProps] = useState<Record<string, any>>(
     () => ({ ...examples[0]?.props })
   )
+
+  const enumOptions = useMemo(() => buildEnumOptions(propsData), [])
 
   if (!activeExample) return null
 
@@ -175,6 +176,7 @@ export function InteractiveDemo({ componentName, examples }: InteractiveDemoProp
                   name={key}
                   value={value}
                   onChange={(val) => handlePropChange(key, val)}
+                  options={enumOptions[componentName]?.[key]}
                 />
               </div>
             )

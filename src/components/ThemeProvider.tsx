@@ -15,11 +15,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     }
   }, [mode])
 
-  const cssVars = generateCSSVars(primaryColor, fontFamily, borderRadius)
+  useEffect(() => {
+    const root = document.documentElement
+    const cssVars = generateCSSVars(primaryColor, fontFamily, borderRadius)
+    for (const [key, value] of Object.entries(cssVars)) {
+      root.style.setProperty(key, value)
+    }
+  }, [primaryColor, fontFamily, borderRadius])
 
-  return (
-    <div style={cssVars as React.CSSProperties}>
-      {children}
-    </div>
-  )
+  return <>{children}</>
 }

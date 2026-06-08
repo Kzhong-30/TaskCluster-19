@@ -22,13 +22,19 @@ for (const { key, path: componentPath } of components) {
     result[key] = docs.flatMap((doc) =>
       Object.values(doc.props)
         .filter((prop) => !prop.parent || !prop.parent.fileName || !prop.parent.fileName.includes('node_modules'))
-        .map((prop) => ({
-          name: prop.name,
-          type: prop.type.name,
-          defaultValue: prop.defaultValue?.value != null ? String(prop.defaultValue.value) : undefined,
-          required: prop.required,
-          description: prop.description,
-        })),
+        .map((prop) => {
+          const entry = {
+            name: prop.name,
+            type: prop.type.name,
+            defaultValue: prop.defaultValue?.value != null ? String(prop.defaultValue.value) : undefined,
+            required: prop.required,
+            description: prop.description,
+          }
+          if (prop.type.name === 'enum' && Array.isArray(prop.type.value)) {
+            entry.enumValues = prop.type.value.map((v) => v.value.replace(/"/g, ''))
+          }
+          return entry
+        }),
     )
 
     console.log(`✓ Extracted props for "${key}" (${result[key].length} props)`)
