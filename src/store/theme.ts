@@ -7,6 +7,7 @@ interface ThemeState {
   fontFamily: string
   borderRadius: number
   toggleMode: () => void
+  setMode: (mode: 'light' | 'dark') => void
   setPrimaryColor: (color: string) => void
   setFontFamily: (font: string) => void
   setBorderRadius: (radius: number) => void
@@ -37,6 +38,7 @@ export const useThemeStore = create<ThemeState>((set) => ({
   fontFamily: 'system-ui',
   borderRadius: 8,
   toggleMode: () => set((state) => ({ mode: state.mode === 'light' ? 'dark' : 'light' })),
+  setMode: (mode) => set({ mode }),
   setPrimaryColor: (color) => set({ primaryColor: color }),
   setFontFamily: (font) => set({ fontFamily: font }),
   setBorderRadius: (radius) => set({ borderRadius: radius }),

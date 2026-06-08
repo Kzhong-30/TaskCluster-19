@@ -6,6 +6,7 @@ interface PropData {
   defaultValue: string | undefined
   required: boolean
   description: string
+  enumValues?: string[]
 }
 
 interface PropsTableProps {
@@ -33,7 +34,11 @@ export function PropsTable({ props }: PropsTableProps) {
           {props.map((prop) => (
             <tr key={prop.name} className="border-t border-[var(--border-color)]">
               <td className="px-4 py-3 font-mono text-primary-600 dark:text-primary-400 text-xs">{prop.name}</td>
-              <td className="px-4 py-3 font-mono text-[var(--text-secondary)] text-xs">{prop.type}</td>
+              <td className="px-4 py-3 font-mono text-[var(--text-secondary)] text-xs">
+                {prop.type === 'enum' && prop.enumValues?.length
+                  ? prop.enumValues.join(' | ')
+                  : prop.type}
+              </td>
               <td className="px-4 py-3 font-mono text-[var(--text-tertiary)] text-xs">{prop.defaultValue ?? '-'}</td>
               <td className="px-4 py-3">
                 {prop.required ? (

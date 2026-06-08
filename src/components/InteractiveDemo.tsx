@@ -18,7 +18,10 @@ const componentMap: Record<string, any> = {
   card: Card,
 }
 
-function buildEnumOptions(data: typeof propsData): Record<string, Record<string, string[]>> {
+function buildEnumOptions(
+  data: typeof propsData,
+  componentName: string
+): Record<string, Record<string, string[]>> {
   const result: Record<string, Record<string, string[]>> = {}
   for (const [compKey, props] of Object.entries(data)) {
     result[compKey] = {}
@@ -27,6 +30,11 @@ function buildEnumOptions(data: typeof propsData): Record<string, Record<string,
         result[compKey][prop.name] = prop.enumValues
       }
     }
+  }
+  if (!(componentName in data)) {
+    console.warn(
+      `[InteractiveDemo] componentName "${componentName}" not found in props-extracted.json. Available keys: ${Object.keys(data).join(', ')}. Enum options will be empty.`
+    )
   }
   return result
 }
@@ -105,7 +113,7 @@ export function InteractiveDemo({ componentName, examples }: InteractiveDemoProp
     () => ({ ...examples[0]?.props })
   )
 
-  const enumOptions = useMemo(() => buildEnumOptions(propsData), [])
+  const enumOptions = useMemo(() => buildEnumOptions(propsData, componentName), [componentName])
 
   if (!activeExample) return null
 

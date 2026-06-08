@@ -18,7 +18,7 @@ export default function ComponentDocPage({
     notFound()
   }
 
-  const props = (propsData[params.name as keyof typeof propsData] || []) as { name: string; type: string; defaultValue: string | undefined; required: boolean; description: string }[]
+  const props = (propsData[params.name as keyof typeof propsData] || []) as { name: string; type: string; defaultValue: string | undefined; required: boolean; description: string; enumValues?: string[] }[]
 
   return (
     <div className="max-w-4xl mx-auto">
