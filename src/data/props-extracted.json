@@ -1,0 +1,5111 @@
+{
+  "button": [
+    {
+      "name": "variant",
+      "type": "enum",
+      "defaultValue": "primary",
+      "required": false,
+      "description": "Visual style variant of the button"
+    },
+    {
+      "name": "size",
+      "type": "enum",
+      "defaultValue": "md",
+      "required": false,
+      "description": "Size of the button"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "defaultValue": "false",
+      "required": false,
+      "description": "Whether the button is disabled"
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "defaultValue": "false",
+      "required": false,
+      "description": "Whether the button is in a loading state"
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true,
+      "description": "Content displayed inside the button"
+    },
+    {
+      "name": "onClick",
+      "type": "() => void",
+      "required": false,
+      "description": "Click handler"
+    },
+    {
+      "name": "fullWidth",
+      "type": "boolean",
+      "defaultValue": "false",
+      "required": false,
+      "description": "Whether the button spans the full width of its container"
+    },
+    {
+      "name": "form",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formAction",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formEncType",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formMethod",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formNoValidate",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formTarget",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "type",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "value",
+      "type": "string | number | readonly string[]",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "defaultChecked",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "defaultValue",
+      "type": "string | number | readonly string[]",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "suppressContentEditableWarning",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "suppressHydrationWarning",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "accessKey",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoCapitalize",
+      "type": "\"off\" | \"none\" | \"on\" | \"sentences\" | \"words\" | \"characters\" | (string & {})",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoFocus",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "defaultValue": "",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "contentEditable",
+      "type": "Booleanish | \"inherit\" | \"plaintext-only\"",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "contextMenu",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "dir",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "draggable",
+      "type": "Booleanish",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "enterKeyHint",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "hidden",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "nonce",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "slot",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "spellCheck",
+      "type": "Booleanish",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "tabIndex",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "translate",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "radioGroup",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "role",
+      "type": "AriaRole",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "about",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "datatype",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "inlist",
+      "type": "any",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "prefix",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "property",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "rel",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "resource",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "rev",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "typeof",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "vocab",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoCorrect",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoSave",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemProp",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemScope",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemType",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemID",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemRef",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "results",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "security",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "unselectable",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "inputMode",
+      "type": "enum",
+      "required": false,
+      "description": "Hints at the type of data that might be entered by the user while editing the element or its contents\n@see {@link https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute}"
+    },
+    {
+      "name": "is",
+      "type": "string",
+      "required": false,
+      "description": "Specify that a standard HTML element should behave like a defined custom built-in element\n@see {@link https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is}"
+    },
+    {
+      "name": "exportparts",
+      "type": "string",
+      "required": false,
+      "description": "@see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/exportparts}"
+    },
+    {
+      "name": "part",
+      "type": "string",
+      "required": false,
+      "description": "@see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/part}"
+    },
+    {
+      "name": "aria-activedescendant",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application."
+    },
+    {
+      "name": "aria-atomic",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute."
+    },
+    {
+      "name": "aria-autocomplete",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be\npresented if they are made."
+    },
+    {
+      "name": "aria-braillelabel",
+      "type": "string",
+      "required": false,
+      "description": "Defines a string value that labels the current element, which is intended to be converted into Braille.\n@see aria-label."
+    },
+    {
+      "name": "aria-brailleroledescription",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human-readable, author-localized abbreviated description for the role of an element, which is intended to be converted into Braille.\n@see aria-roledescription."
+    },
+    {
+      "name": "aria-busy",
+      "type": "Booleanish",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "aria-checked",
+      "type": "boolean | \"true\" | \"false\" | \"mixed\"",
+      "required": false,
+      "description": "Indicates the current \"checked\" state of checkboxes, radio buttons, and other widgets.\n@see aria-pressed\n@see aria-selected."
+    },
+    {
+      "name": "aria-colcount",
+      "type": "number",
+      "required": false,
+      "description": "Defines the total number of columns in a table, grid, or treegrid.\n@see aria-colindex."
+    },
+    {
+      "name": "aria-colindex",
+      "type": "number",
+      "required": false,
+      "description": "Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.\n@see aria-colcount\n@see aria-colspan."
+    },
+    {
+      "name": "aria-colindextext",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human readable text alternative of aria-colindex.\n@see aria-rowindextext."
+    },
+    {
+      "name": "aria-colspan",
+      "type": "number",
+      "required": false,
+      "description": "Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.\n@see aria-colindex\n@see aria-rowspan."
+    },
+    {
+      "name": "aria-controls",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element (or elements) whose contents or presence are controlled by the current element.\n@see aria-owns."
+    },
+    {
+      "name": "aria-current",
+      "type": "boolean | \"true\" | \"false\" | \"page\" | \"step\" | \"location\" | \"date\" | \"time\"",
+      "required": false,
+      "description": "Indicates the element that represents the current item within a container or set of related elements."
+    },
+    {
+      "name": "aria-describedby",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element (or elements) that describes the object.\n@see aria-labelledby"
+    },
+    {
+      "name": "aria-description",
+      "type": "string",
+      "required": false,
+      "description": "Defines a string value that describes or annotates the current element.\n@see related aria-describedby."
+    },
+    {
+      "name": "aria-details",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element that provides a detailed, extended description for the object.\n@see aria-describedby."
+    },
+    {
+      "name": "aria-disabled",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.\n@see aria-hidden\n@see aria-readonly."
+    },
+    {
+      "name": "aria-dropeffect",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates what functions can be performed when a dragged object is released on the drop target.\n@deprecated in ARIA 1.1"
+    },
+    {
+      "name": "aria-errormessage",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element that provides an error message for the object.\n@see aria-invalid\n@see aria-describedby."
+    },
+    {
+      "name": "aria-expanded",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed."
+    },
+    {
+      "name": "aria-flowto",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,\nallows assistive technology to override the general default of reading in document source order."
+    },
+    {
+      "name": "aria-grabbed",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates an element's \"grabbed\" state in a drag-and-drop operation.\n@deprecated in ARIA 1.1"
+    },
+    {
+      "name": "aria-haspopup",
+      "type": "boolean | \"true\" | \"false\" | \"dialog\" | \"grid\" | \"listbox\" | \"menu\" | \"tree\"",
+      "required": false,
+      "description": "Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element."
+    },
+    {
+      "name": "aria-hidden",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether the element is exposed to an accessibility API.\n@see aria-disabled."
+    },
+    {
+      "name": "aria-invalid",
+      "type": "boolean | \"true\" | \"false\" | \"grammar\" | \"spelling\"",
+      "required": false,
+      "description": "Indicates the entered value does not conform to the format expected by the application.\n@see aria-errormessage."
+    },
+    {
+      "name": "aria-keyshortcuts",
+      "type": "string",
+      "required": false,
+      "description": "Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element."
+    },
+    {
+      "name": "aria-label",
+      "type": "string",
+      "required": false,
+      "description": "Defines a string value that labels the current element.\n@see aria-labelledby."
+    },
+    {
+      "name": "aria-labelledby",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element (or elements) that labels the current element.\n@see aria-describedby."
+    },
+    {
+      "name": "aria-level",
+      "type": "number",
+      "required": false,
+      "description": "Defines the hierarchical level of an element within a structure."
+    },
+    {
+      "name": "aria-live",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region."
+    },
+    {
+      "name": "aria-modal",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether an element is modal when displayed."
+    },
+    {
+      "name": "aria-multiline",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether a text box accepts multiple lines of input or only a single line."
+    },
+    {
+      "name": "aria-multiselectable",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that the user may select more than one item from the current selectable descendants."
+    },
+    {
+      "name": "aria-orientation",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous."
+    },
+    {
+      "name": "aria-owns",
+      "type": "string",
+      "required": false,
+      "description": "Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.\n@see aria-controls."
+    },
+    {
+      "name": "aria-placeholder",
+      "type": "string",
+      "required": false,
+      "description": "Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format."
+    },
+    {
+      "name": "aria-posinset",
+      "type": "number",
+      "required": false,
+      "description": "Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n@see aria-setsize."
+    },
+    {
+      "name": "aria-pressed",
+      "type": "boolean | \"true\" | \"false\" | \"mixed\"",
+      "required": false,
+      "description": "Indicates the current \"pressed\" state of toggle buttons.\n@see aria-checked\n@see aria-selected."
+    },
+    {
+      "name": "aria-readonly",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that the element is not editable, but is otherwise operable.\n@see aria-disabled."
+    },
+    {
+      "name": "aria-relevant",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.\n@see aria-atomic."
+    },
+    {
+      "name": "aria-required",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that user input is required on the element before a form may be submitted."
+    },
+    {
+      "name": "aria-roledescription",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human-readable, author-localized description for the role of an element."
+    },
+    {
+      "name": "aria-rowcount",
+      "type": "number",
+      "required": false,
+      "description": "Defines the total number of rows in a table, grid, or treegrid.\n@see aria-rowindex."
+    },
+    {
+      "name": "aria-rowindex",
+      "type": "number",
+      "required": false,
+      "description": "Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.\n@see aria-rowcount\n@see aria-rowspan."
+    },
+    {
+      "name": "aria-rowindextext",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human readable text alternative of aria-rowindex.\n@see aria-colindextext."
+    },
+    {
+      "name": "aria-rowspan",
+      "type": "number",
+      "required": false,
+      "description": "Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.\n@see aria-rowindex\n@see aria-colspan."
+    },
+    {
+      "name": "aria-selected",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates the current \"selected\" state of various widgets.\n@see aria-checked\n@see aria-pressed."
+    },
+    {
+      "name": "aria-setsize",
+      "type": "number",
+      "required": false,
+      "description": "Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n@see aria-posinset."
+    },
+    {
+      "name": "aria-sort",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates if items in a table or grid are sorted in ascending or descending order."
+    },
+    {
+      "name": "aria-valuemax",
+      "type": "number",
+      "required": false,
+      "description": "Defines the maximum allowed value for a range widget."
+    },
+    {
+      "name": "aria-valuemin",
+      "type": "number",
+      "required": false,
+      "description": "Defines the minimum allowed value for a range widget."
+    },
+    {
+      "name": "aria-valuenow",
+      "type": "number",
+      "required": false,
+      "description": "Defines the current value for a range widget.\n@see aria-valuetext."
+    },
+    {
+      "name": "aria-valuetext",
+      "type": "string",
+      "required": false,
+      "description": "Defines the human readable text alternative of aria-valuenow for a range widget."
+    },
+    {
+      "name": "dangerouslySetInnerHTML",
+      "type": "{ __html: string | TrustedHTML; }",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCopy",
+      "type": "ClipboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCopyCapture",
+      "type": "ClipboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCut",
+      "type": "ClipboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCutCapture",
+      "type": "ClipboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPaste",
+      "type": "ClipboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPasteCapture",
+      "type": "ClipboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionEnd",
+      "type": "CompositionEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionEndCapture",
+      "type": "CompositionEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionStart",
+      "type": "CompositionEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionStartCapture",
+      "type": "CompositionEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionUpdate",
+      "type": "CompositionEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionUpdateCapture",
+      "type": "CompositionEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onFocus",
+      "type": "FocusEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onFocusCapture",
+      "type": "FocusEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBlur",
+      "type": "FocusEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBlurCapture",
+      "type": "FocusEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onChange",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onChangeCapture",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBeforeInput",
+      "type": "InputEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBeforeInputCapture",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInput",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInputCapture",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onReset",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onResetCapture",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSubmit",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSubmitCapture",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInvalid",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInvalidCapture",
+      "type": "FormEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoad",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onError",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onErrorCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyDown",
+      "type": "KeyboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyDownCapture",
+      "type": "KeyboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyPress",
+      "type": "KeyboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": "@deprecated Use `onKeyUp` or `onKeyDown` instead"
+    },
+    {
+      "name": "onKeyPressCapture",
+      "type": "KeyboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": "@deprecated Use `onKeyUpCapture` or `onKeyDownCapture` instead"
+    },
+    {
+      "name": "onKeyUp",
+      "type": "KeyboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyUpCapture",
+      "type": "KeyboardEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAbort",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAbortCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlay",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlayCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlayThrough",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlayThroughCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDurationChange",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDurationChangeCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEmptied",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEmptiedCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEncrypted",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEncryptedCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEnded",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEndedCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedData",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedDataCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedMetadata",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedMetadataCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadStart",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadStartCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPause",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPauseCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlay",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlayCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlaying",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlayingCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onProgress",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onProgressCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onRateChange",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onRateChangeCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeeked",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeekedCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeeking",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeekingCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onStalled",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onStalledCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSuspend",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSuspendCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTimeUpdate",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTimeUpdateCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onVolumeChange",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onVolumeChangeCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWaiting",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWaitingCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAuxClick",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAuxClickCapture",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onClickCapture",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onContextMenu",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onContextMenuCapture",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDoubleClick",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDoubleClickCapture",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDrag",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragCapture",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEnd",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEndCapture",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEnter",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEnterCapture",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragExit",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragExitCapture",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragLeave",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragLeaveCapture",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragOver",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragOverCapture",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragStart",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragStartCapture",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDrop",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDropCapture",
+      "type": "DragEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseDown",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseDownCapture",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseEnter",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseLeave",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseMove",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseMoveCapture",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOut",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOutCapture",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOver",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOverCapture",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseUp",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseUpCapture",
+      "type": "MouseEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSelect",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSelectCapture",
+      "type": "ReactEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchCancel",
+      "type": "TouchEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchCancelCapture",
+      "type": "TouchEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchEnd",
+      "type": "TouchEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchEndCapture",
+      "type": "TouchEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchMove",
+      "type": "TouchEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchMoveCapture",
+      "type": "TouchEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchStart",
+      "type": "TouchEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchStartCapture",
+      "type": "TouchEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerDown",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerDownCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerMove",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerMoveCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerUp",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerUpCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerCancel",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerCancelCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerEnter",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerLeave",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOver",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOverCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOut",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOutCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onGotPointerCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onGotPointerCaptureCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLostPointerCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLostPointerCaptureCapture",
+      "type": "PointerEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onScroll",
+      "type": "UIEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onScrollCapture",
+      "type": "UIEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWheel",
+      "type": "WheelEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWheelCapture",
+      "type": "WheelEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationStart",
+      "type": "AnimationEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationStartCapture",
+      "type": "AnimationEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationEnd",
+      "type": "AnimationEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationEndCapture",
+      "type": "AnimationEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationIteration",
+      "type": "AnimationEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationIterationCapture",
+      "type": "AnimationEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTransitionEnd",
+      "type": "TransitionEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTransitionEndCapture",
+      "type": "TransitionEventHandler<HTMLButtonElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "ref",
+      "type": "LegacyRef<HTMLButtonElement>",
+      "required": false,
+      "description": "Allows getting a ref to the component instance.\nOnce the component unmounts, React will set `ref.current` to `null`\n(or call the ref with `null` if you passed a callback ref).\n@see {@link https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom React Docs}"
+    },
+    {
+      "name": "key",
+      "type": "Key",
+      "required": false,
+      "description": ""
+    }
+  ],
+  "input": [
+    {
+      "name": "value",
+      "type": "string",
+      "required": true,
+      "description": "Current value of the input"
+    },
+    {
+      "name": "onChange",
+      "type": "(value: string) => void",
+      "required": true,
+      "description": "Callback fired when the input value changes"
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "defaultValue": "",
+      "required": false,
+      "description": "Placeholder text shown when the input is empty"
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": false,
+      "description": "Label text displayed above the input"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": false,
+      "description": "Error message displayed below the input"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "defaultValue": "false",
+      "required": false,
+      "description": "Whether the input is disabled"
+    },
+    {
+      "name": "size",
+      "type": "enum",
+      "defaultValue": "md",
+      "required": false,
+      "description": "Size of the input field"
+    },
+    {
+      "name": "type",
+      "type": "enum",
+      "defaultValue": "text",
+      "required": false,
+      "description": "HTML input type"
+    },
+    {
+      "name": "accept",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoComplete",
+      "type": "HTMLInputAutoCompleteAttribute",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "capture",
+      "type": "boolean | \"user\" | \"environment\"",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "checked",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "form",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formAction",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formEncType",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formMethod",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formNoValidate",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "formTarget",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "height",
+      "type": "string | number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "list",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "max",
+      "type": "string | number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "maxLength",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "min",
+      "type": "string | number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "minLength",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "multiple",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "pattern",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "readOnly",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "src",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "step",
+      "type": "string | number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "width",
+      "type": "string | number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "defaultChecked",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "defaultValue",
+      "type": "string | number | readonly string[]",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "suppressContentEditableWarning",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "suppressHydrationWarning",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "accessKey",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoCapitalize",
+      "type": "\"off\" | \"on\" | (string & {}) | \"none\" | \"sentences\" | \"words\" | \"characters\"",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoFocus",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "defaultValue": "",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "contentEditable",
+      "type": "Booleanish | \"inherit\" | \"plaintext-only\"",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "contextMenu",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "dir",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "draggable",
+      "type": "Booleanish",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "enterKeyHint",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "hidden",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "nonce",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "slot",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "spellCheck",
+      "type": "Booleanish",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "tabIndex",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "translate",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "radioGroup",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "role",
+      "type": "AriaRole",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "about",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "datatype",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "inlist",
+      "type": "any",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "prefix",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "property",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "rel",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "resource",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "rev",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "typeof",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "vocab",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoCorrect",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoSave",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemProp",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemScope",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemType",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemID",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemRef",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "results",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "security",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "unselectable",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "inputMode",
+      "type": "enum",
+      "required": false,
+      "description": "Hints at the type of data that might be entered by the user while editing the element or its contents\n@see {@link https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute}"
+    },
+    {
+      "name": "is",
+      "type": "string",
+      "required": false,
+      "description": "Specify that a standard HTML element should behave like a defined custom built-in element\n@see {@link https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is}"
+    },
+    {
+      "name": "exportparts",
+      "type": "string",
+      "required": false,
+      "description": "@see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/exportparts}"
+    },
+    {
+      "name": "part",
+      "type": "string",
+      "required": false,
+      "description": "@see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/part}"
+    },
+    {
+      "name": "aria-activedescendant",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application."
+    },
+    {
+      "name": "aria-atomic",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute."
+    },
+    {
+      "name": "aria-autocomplete",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be\npresented if they are made."
+    },
+    {
+      "name": "aria-braillelabel",
+      "type": "string",
+      "required": false,
+      "description": "Defines a string value that labels the current element, which is intended to be converted into Braille.\n@see aria-label."
+    },
+    {
+      "name": "aria-brailleroledescription",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human-readable, author-localized abbreviated description for the role of an element, which is intended to be converted into Braille.\n@see aria-roledescription."
+    },
+    {
+      "name": "aria-busy",
+      "type": "Booleanish",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "aria-checked",
+      "type": "boolean | \"true\" | \"false\" | \"mixed\"",
+      "required": false,
+      "description": "Indicates the current \"checked\" state of checkboxes, radio buttons, and other widgets.\n@see aria-pressed\n@see aria-selected."
+    },
+    {
+      "name": "aria-colcount",
+      "type": "number",
+      "required": false,
+      "description": "Defines the total number of columns in a table, grid, or treegrid.\n@see aria-colindex."
+    },
+    {
+      "name": "aria-colindex",
+      "type": "number",
+      "required": false,
+      "description": "Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.\n@see aria-colcount\n@see aria-colspan."
+    },
+    {
+      "name": "aria-colindextext",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human readable text alternative of aria-colindex.\n@see aria-rowindextext."
+    },
+    {
+      "name": "aria-colspan",
+      "type": "number",
+      "required": false,
+      "description": "Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.\n@see aria-colindex\n@see aria-rowspan."
+    },
+    {
+      "name": "aria-controls",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element (or elements) whose contents or presence are controlled by the current element.\n@see aria-owns."
+    },
+    {
+      "name": "aria-current",
+      "type": "boolean | \"step\" | \"true\" | \"false\" | \"page\" | \"location\" | \"date\" | \"time\"",
+      "required": false,
+      "description": "Indicates the element that represents the current item within a container or set of related elements."
+    },
+    {
+      "name": "aria-describedby",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element (or elements) that describes the object.\n@see aria-labelledby"
+    },
+    {
+      "name": "aria-description",
+      "type": "string",
+      "required": false,
+      "description": "Defines a string value that describes or annotates the current element.\n@see related aria-describedby."
+    },
+    {
+      "name": "aria-details",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element that provides a detailed, extended description for the object.\n@see aria-describedby."
+    },
+    {
+      "name": "aria-disabled",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.\n@see aria-hidden\n@see aria-readonly."
+    },
+    {
+      "name": "aria-dropeffect",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates what functions can be performed when a dragged object is released on the drop target.\n@deprecated in ARIA 1.1"
+    },
+    {
+      "name": "aria-errormessage",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element that provides an error message for the object.\n@see aria-invalid\n@see aria-describedby."
+    },
+    {
+      "name": "aria-expanded",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed."
+    },
+    {
+      "name": "aria-flowto",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,\nallows assistive technology to override the general default of reading in document source order."
+    },
+    {
+      "name": "aria-grabbed",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates an element's \"grabbed\" state in a drag-and-drop operation.\n@deprecated in ARIA 1.1"
+    },
+    {
+      "name": "aria-haspopup",
+      "type": "boolean | \"true\" | \"false\" | \"dialog\" | \"grid\" | \"listbox\" | \"menu\" | \"tree\"",
+      "required": false,
+      "description": "Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element."
+    },
+    {
+      "name": "aria-hidden",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether the element is exposed to an accessibility API.\n@see aria-disabled."
+    },
+    {
+      "name": "aria-invalid",
+      "type": "boolean | \"true\" | \"false\" | \"grammar\" | \"spelling\"",
+      "required": false,
+      "description": "Indicates the entered value does not conform to the format expected by the application.\n@see aria-errormessage."
+    },
+    {
+      "name": "aria-keyshortcuts",
+      "type": "string",
+      "required": false,
+      "description": "Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element."
+    },
+    {
+      "name": "aria-label",
+      "type": "string",
+      "required": false,
+      "description": "Defines a string value that labels the current element.\n@see aria-labelledby."
+    },
+    {
+      "name": "aria-labelledby",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element (or elements) that labels the current element.\n@see aria-describedby."
+    },
+    {
+      "name": "aria-level",
+      "type": "number",
+      "required": false,
+      "description": "Defines the hierarchical level of an element within a structure."
+    },
+    {
+      "name": "aria-live",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region."
+    },
+    {
+      "name": "aria-modal",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether an element is modal when displayed."
+    },
+    {
+      "name": "aria-multiline",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether a text box accepts multiple lines of input or only a single line."
+    },
+    {
+      "name": "aria-multiselectable",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that the user may select more than one item from the current selectable descendants."
+    },
+    {
+      "name": "aria-orientation",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous."
+    },
+    {
+      "name": "aria-owns",
+      "type": "string",
+      "required": false,
+      "description": "Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.\n@see aria-controls."
+    },
+    {
+      "name": "aria-placeholder",
+      "type": "string",
+      "required": false,
+      "description": "Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format."
+    },
+    {
+      "name": "aria-posinset",
+      "type": "number",
+      "required": false,
+      "description": "Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n@see aria-setsize."
+    },
+    {
+      "name": "aria-pressed",
+      "type": "boolean | \"true\" | \"false\" | \"mixed\"",
+      "required": false,
+      "description": "Indicates the current \"pressed\" state of toggle buttons.\n@see aria-checked\n@see aria-selected."
+    },
+    {
+      "name": "aria-readonly",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that the element is not editable, but is otherwise operable.\n@see aria-disabled."
+    },
+    {
+      "name": "aria-relevant",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.\n@see aria-atomic."
+    },
+    {
+      "name": "aria-required",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that user input is required on the element before a form may be submitted."
+    },
+    {
+      "name": "aria-roledescription",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human-readable, author-localized description for the role of an element."
+    },
+    {
+      "name": "aria-rowcount",
+      "type": "number",
+      "required": false,
+      "description": "Defines the total number of rows in a table, grid, or treegrid.\n@see aria-rowindex."
+    },
+    {
+      "name": "aria-rowindex",
+      "type": "number",
+      "required": false,
+      "description": "Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.\n@see aria-rowcount\n@see aria-rowspan."
+    },
+    {
+      "name": "aria-rowindextext",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human readable text alternative of aria-rowindex.\n@see aria-colindextext."
+    },
+    {
+      "name": "aria-rowspan",
+      "type": "number",
+      "required": false,
+      "description": "Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.\n@see aria-rowindex\n@see aria-colspan."
+    },
+    {
+      "name": "aria-selected",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates the current \"selected\" state of various widgets.\n@see aria-checked\n@see aria-pressed."
+    },
+    {
+      "name": "aria-setsize",
+      "type": "number",
+      "required": false,
+      "description": "Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n@see aria-posinset."
+    },
+    {
+      "name": "aria-sort",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates if items in a table or grid are sorted in ascending or descending order."
+    },
+    {
+      "name": "aria-valuemax",
+      "type": "number",
+      "required": false,
+      "description": "Defines the maximum allowed value for a range widget."
+    },
+    {
+      "name": "aria-valuemin",
+      "type": "number",
+      "required": false,
+      "description": "Defines the minimum allowed value for a range widget."
+    },
+    {
+      "name": "aria-valuenow",
+      "type": "number",
+      "required": false,
+      "description": "Defines the current value for a range widget.\n@see aria-valuetext."
+    },
+    {
+      "name": "aria-valuetext",
+      "type": "string",
+      "required": false,
+      "description": "Defines the human readable text alternative of aria-valuenow for a range widget."
+    },
+    {
+      "name": "dangerouslySetInnerHTML",
+      "type": "{ __html: string | TrustedHTML; }",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCopy",
+      "type": "ClipboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCopyCapture",
+      "type": "ClipboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCut",
+      "type": "ClipboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCutCapture",
+      "type": "ClipboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPaste",
+      "type": "ClipboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPasteCapture",
+      "type": "ClipboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionEnd",
+      "type": "CompositionEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionEndCapture",
+      "type": "CompositionEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionStart",
+      "type": "CompositionEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionStartCapture",
+      "type": "CompositionEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionUpdate",
+      "type": "CompositionEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionUpdateCapture",
+      "type": "CompositionEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onFocus",
+      "type": "FocusEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onFocusCapture",
+      "type": "FocusEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBlur",
+      "type": "FocusEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBlurCapture",
+      "type": "FocusEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onChangeCapture",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBeforeInput",
+      "type": "InputEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBeforeInputCapture",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInput",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInputCapture",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onReset",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onResetCapture",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSubmit",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSubmitCapture",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInvalid",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInvalidCapture",
+      "type": "FormEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoad",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onError",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onErrorCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyDown",
+      "type": "KeyboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyDownCapture",
+      "type": "KeyboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyPress",
+      "type": "KeyboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": "@deprecated Use `onKeyUp` or `onKeyDown` instead"
+    },
+    {
+      "name": "onKeyPressCapture",
+      "type": "KeyboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": "@deprecated Use `onKeyUpCapture` or `onKeyDownCapture` instead"
+    },
+    {
+      "name": "onKeyUp",
+      "type": "KeyboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyUpCapture",
+      "type": "KeyboardEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAbort",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAbortCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlay",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlayCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlayThrough",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlayThroughCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDurationChange",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDurationChangeCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEmptied",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEmptiedCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEncrypted",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEncryptedCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEnded",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEndedCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedData",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedDataCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedMetadata",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedMetadataCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadStart",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadStartCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPause",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPauseCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlay",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlayCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlaying",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlayingCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onProgress",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onProgressCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onRateChange",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onRateChangeCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeeked",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeekedCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeeking",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeekingCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onStalled",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onStalledCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSuspend",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSuspendCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTimeUpdate",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTimeUpdateCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onVolumeChange",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onVolumeChangeCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWaiting",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWaitingCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAuxClick",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAuxClickCapture",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onClick",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onClickCapture",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onContextMenu",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onContextMenuCapture",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDoubleClick",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDoubleClickCapture",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDrag",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragCapture",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEnd",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEndCapture",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEnter",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEnterCapture",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragExit",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragExitCapture",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragLeave",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragLeaveCapture",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragOver",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragOverCapture",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragStart",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragStartCapture",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDrop",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDropCapture",
+      "type": "DragEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseDown",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseDownCapture",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseEnter",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseLeave",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseMove",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseMoveCapture",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOut",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOutCapture",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOver",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOverCapture",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseUp",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseUpCapture",
+      "type": "MouseEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSelect",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSelectCapture",
+      "type": "ReactEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchCancel",
+      "type": "TouchEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchCancelCapture",
+      "type": "TouchEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchEnd",
+      "type": "TouchEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchEndCapture",
+      "type": "TouchEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchMove",
+      "type": "TouchEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchMoveCapture",
+      "type": "TouchEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchStart",
+      "type": "TouchEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchStartCapture",
+      "type": "TouchEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerDown",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerDownCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerMove",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerMoveCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerUp",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerUpCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerCancel",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerCancelCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerEnter",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerLeave",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOver",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOverCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOut",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOutCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onGotPointerCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onGotPointerCaptureCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLostPointerCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLostPointerCaptureCapture",
+      "type": "PointerEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onScroll",
+      "type": "UIEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onScrollCapture",
+      "type": "UIEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWheel",
+      "type": "WheelEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWheelCapture",
+      "type": "WheelEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationStart",
+      "type": "AnimationEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationStartCapture",
+      "type": "AnimationEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationEnd",
+      "type": "AnimationEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationEndCapture",
+      "type": "AnimationEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationIteration",
+      "type": "AnimationEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationIterationCapture",
+      "type": "AnimationEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTransitionEnd",
+      "type": "TransitionEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTransitionEndCapture",
+      "type": "TransitionEventHandler<HTMLInputElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "ref",
+      "type": "LegacyRef<HTMLInputElement>",
+      "required": false,
+      "description": "Allows getting a ref to the component instance.\nOnce the component unmounts, React will set `ref.current` to `null`\n(or call the ref with `null` if you passed a callback ref).\n@see {@link https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom React Docs}"
+    },
+    {
+      "name": "key",
+      "type": "Key",
+      "required": false,
+      "description": ""
+    }
+  ],
+  "card": [
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Title displayed at the top of the card"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": false,
+      "description": "Short description displayed below the title"
+    },
+    {
+      "name": "imageUrl",
+      "type": "string",
+      "required": false,
+      "description": "URL of an image displayed at the top of the card"
+    },
+    {
+      "name": "variant",
+      "type": "enum",
+      "defaultValue": "default",
+      "required": false,
+      "description": "Visual style variant of the card"
+    },
+    {
+      "name": "padding",
+      "type": "enum",
+      "defaultValue": "md",
+      "required": false,
+      "description": "Internal padding of the card"
+    },
+    {
+      "name": "hoverable",
+      "type": "boolean",
+      "defaultValue": "false",
+      "required": false,
+      "description": "Whether the card has a hover lift effect"
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": false,
+      "description": "Content rendered inside the card body"
+    },
+    {
+      "name": "defaultChecked",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "defaultValue",
+      "type": "string | number | readonly string[]",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "suppressContentEditableWarning",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "suppressHydrationWarning",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "accessKey",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoCapitalize",
+      "type": "\"none\" | \"off\" | \"on\" | \"sentences\" | \"words\" | \"characters\" | (string & {})",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoFocus",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "defaultValue": "",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "contentEditable",
+      "type": "Booleanish | \"inherit\" | \"plaintext-only\"",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "contextMenu",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "dir",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "draggable",
+      "type": "Booleanish",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "enterKeyHint",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "hidden",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "nonce",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "slot",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "spellCheck",
+      "type": "Booleanish",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "tabIndex",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "translate",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "radioGroup",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "role",
+      "type": "AriaRole",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "about",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "datatype",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "inlist",
+      "type": "any",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "prefix",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "property",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "rel",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "resource",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "rev",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "typeof",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "vocab",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoCorrect",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "autoSave",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemProp",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemScope",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemType",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemID",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "itemRef",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "results",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "security",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "unselectable",
+      "type": "enum",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "inputMode",
+      "type": "enum",
+      "required": false,
+      "description": "Hints at the type of data that might be entered by the user while editing the element or its contents\n@see {@link https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute}"
+    },
+    {
+      "name": "is",
+      "type": "string",
+      "required": false,
+      "description": "Specify that a standard HTML element should behave like a defined custom built-in element\n@see {@link https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is}"
+    },
+    {
+      "name": "exportparts",
+      "type": "string",
+      "required": false,
+      "description": "@see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/exportparts}"
+    },
+    {
+      "name": "part",
+      "type": "string",
+      "required": false,
+      "description": "@see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/part}"
+    },
+    {
+      "name": "aria-activedescendant",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application."
+    },
+    {
+      "name": "aria-atomic",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute."
+    },
+    {
+      "name": "aria-autocomplete",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be\npresented if they are made."
+    },
+    {
+      "name": "aria-braillelabel",
+      "type": "string",
+      "required": false,
+      "description": "Defines a string value that labels the current element, which is intended to be converted into Braille.\n@see aria-label."
+    },
+    {
+      "name": "aria-brailleroledescription",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human-readable, author-localized abbreviated description for the role of an element, which is intended to be converted into Braille.\n@see aria-roledescription."
+    },
+    {
+      "name": "aria-busy",
+      "type": "Booleanish",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "aria-checked",
+      "type": "boolean | \"true\" | \"false\" | \"mixed\"",
+      "required": false,
+      "description": "Indicates the current \"checked\" state of checkboxes, radio buttons, and other widgets.\n@see aria-pressed\n@see aria-selected."
+    },
+    {
+      "name": "aria-colcount",
+      "type": "number",
+      "required": false,
+      "description": "Defines the total number of columns in a table, grid, or treegrid.\n@see aria-colindex."
+    },
+    {
+      "name": "aria-colindex",
+      "type": "number",
+      "required": false,
+      "description": "Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.\n@see aria-colcount\n@see aria-colspan."
+    },
+    {
+      "name": "aria-colindextext",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human readable text alternative of aria-colindex.\n@see aria-rowindextext."
+    },
+    {
+      "name": "aria-colspan",
+      "type": "number",
+      "required": false,
+      "description": "Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.\n@see aria-colindex\n@see aria-rowspan."
+    },
+    {
+      "name": "aria-controls",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element (or elements) whose contents or presence are controlled by the current element.\n@see aria-owns."
+    },
+    {
+      "name": "aria-current",
+      "type": "boolean | \"true\" | \"false\" | \"page\" | \"step\" | \"location\" | \"date\" | \"time\"",
+      "required": false,
+      "description": "Indicates the element that represents the current item within a container or set of related elements."
+    },
+    {
+      "name": "aria-describedby",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element (or elements) that describes the object.\n@see aria-labelledby"
+    },
+    {
+      "name": "aria-description",
+      "type": "string",
+      "required": false,
+      "description": "Defines a string value that describes or annotates the current element.\n@see related aria-describedby."
+    },
+    {
+      "name": "aria-details",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element that provides a detailed, extended description for the object.\n@see aria-describedby."
+    },
+    {
+      "name": "aria-disabled",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.\n@see aria-hidden\n@see aria-readonly."
+    },
+    {
+      "name": "aria-dropeffect",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates what functions can be performed when a dragged object is released on the drop target.\n@deprecated in ARIA 1.1"
+    },
+    {
+      "name": "aria-errormessage",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element that provides an error message for the object.\n@see aria-invalid\n@see aria-describedby."
+    },
+    {
+      "name": "aria-expanded",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed."
+    },
+    {
+      "name": "aria-flowto",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,\nallows assistive technology to override the general default of reading in document source order."
+    },
+    {
+      "name": "aria-grabbed",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates an element's \"grabbed\" state in a drag-and-drop operation.\n@deprecated in ARIA 1.1"
+    },
+    {
+      "name": "aria-haspopup",
+      "type": "boolean | \"true\" | \"false\" | \"dialog\" | \"grid\" | \"listbox\" | \"menu\" | \"tree\"",
+      "required": false,
+      "description": "Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element."
+    },
+    {
+      "name": "aria-hidden",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether the element is exposed to an accessibility API.\n@see aria-disabled."
+    },
+    {
+      "name": "aria-invalid",
+      "type": "boolean | \"true\" | \"false\" | \"grammar\" | \"spelling\"",
+      "required": false,
+      "description": "Indicates the entered value does not conform to the format expected by the application.\n@see aria-errormessage."
+    },
+    {
+      "name": "aria-keyshortcuts",
+      "type": "string",
+      "required": false,
+      "description": "Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element."
+    },
+    {
+      "name": "aria-label",
+      "type": "string",
+      "required": false,
+      "description": "Defines a string value that labels the current element.\n@see aria-labelledby."
+    },
+    {
+      "name": "aria-labelledby",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the element (or elements) that labels the current element.\n@see aria-describedby."
+    },
+    {
+      "name": "aria-level",
+      "type": "number",
+      "required": false,
+      "description": "Defines the hierarchical level of an element within a structure."
+    },
+    {
+      "name": "aria-live",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region."
+    },
+    {
+      "name": "aria-modal",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether an element is modal when displayed."
+    },
+    {
+      "name": "aria-multiline",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates whether a text box accepts multiple lines of input or only a single line."
+    },
+    {
+      "name": "aria-multiselectable",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that the user may select more than one item from the current selectable descendants."
+    },
+    {
+      "name": "aria-orientation",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous."
+    },
+    {
+      "name": "aria-owns",
+      "type": "string",
+      "required": false,
+      "description": "Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.\n@see aria-controls."
+    },
+    {
+      "name": "aria-placeholder",
+      "type": "string",
+      "required": false,
+      "description": "Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format."
+    },
+    {
+      "name": "aria-posinset",
+      "type": "number",
+      "required": false,
+      "description": "Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n@see aria-setsize."
+    },
+    {
+      "name": "aria-pressed",
+      "type": "boolean | \"true\" | \"false\" | \"mixed\"",
+      "required": false,
+      "description": "Indicates the current \"pressed\" state of toggle buttons.\n@see aria-checked\n@see aria-selected."
+    },
+    {
+      "name": "aria-readonly",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that the element is not editable, but is otherwise operable.\n@see aria-disabled."
+    },
+    {
+      "name": "aria-relevant",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.\n@see aria-atomic."
+    },
+    {
+      "name": "aria-required",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates that user input is required on the element before a form may be submitted."
+    },
+    {
+      "name": "aria-roledescription",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human-readable, author-localized description for the role of an element."
+    },
+    {
+      "name": "aria-rowcount",
+      "type": "number",
+      "required": false,
+      "description": "Defines the total number of rows in a table, grid, or treegrid.\n@see aria-rowindex."
+    },
+    {
+      "name": "aria-rowindex",
+      "type": "number",
+      "required": false,
+      "description": "Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.\n@see aria-rowcount\n@see aria-rowspan."
+    },
+    {
+      "name": "aria-rowindextext",
+      "type": "string",
+      "required": false,
+      "description": "Defines a human readable text alternative of aria-rowindex.\n@see aria-colindextext."
+    },
+    {
+      "name": "aria-rowspan",
+      "type": "number",
+      "required": false,
+      "description": "Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.\n@see aria-rowindex\n@see aria-colspan."
+    },
+    {
+      "name": "aria-selected",
+      "type": "Booleanish",
+      "required": false,
+      "description": "Indicates the current \"selected\" state of various widgets.\n@see aria-checked\n@see aria-pressed."
+    },
+    {
+      "name": "aria-setsize",
+      "type": "number",
+      "required": false,
+      "description": "Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n@see aria-posinset."
+    },
+    {
+      "name": "aria-sort",
+      "type": "enum",
+      "required": false,
+      "description": "Indicates if items in a table or grid are sorted in ascending or descending order."
+    },
+    {
+      "name": "aria-valuemax",
+      "type": "number",
+      "required": false,
+      "description": "Defines the maximum allowed value for a range widget."
+    },
+    {
+      "name": "aria-valuemin",
+      "type": "number",
+      "required": false,
+      "description": "Defines the minimum allowed value for a range widget."
+    },
+    {
+      "name": "aria-valuenow",
+      "type": "number",
+      "required": false,
+      "description": "Defines the current value for a range widget.\n@see aria-valuetext."
+    },
+    {
+      "name": "aria-valuetext",
+      "type": "string",
+      "required": false,
+      "description": "Defines the human readable text alternative of aria-valuenow for a range widget."
+    },
+    {
+      "name": "dangerouslySetInnerHTML",
+      "type": "{ __html: string | TrustedHTML; }",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCopy",
+      "type": "ClipboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCopyCapture",
+      "type": "ClipboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCut",
+      "type": "ClipboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCutCapture",
+      "type": "ClipboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPaste",
+      "type": "ClipboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPasteCapture",
+      "type": "ClipboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionEnd",
+      "type": "CompositionEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionEndCapture",
+      "type": "CompositionEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionStart",
+      "type": "CompositionEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionStartCapture",
+      "type": "CompositionEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionUpdate",
+      "type": "CompositionEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCompositionUpdateCapture",
+      "type": "CompositionEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onFocus",
+      "type": "FocusEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onFocusCapture",
+      "type": "FocusEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBlur",
+      "type": "FocusEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBlurCapture",
+      "type": "FocusEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onChange",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onChangeCapture",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBeforeInput",
+      "type": "InputEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onBeforeInputCapture",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInput",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInputCapture",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onReset",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onResetCapture",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSubmit",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSubmitCapture",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInvalid",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onInvalidCapture",
+      "type": "FormEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoad",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onError",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onErrorCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyDown",
+      "type": "KeyboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyDownCapture",
+      "type": "KeyboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyPress",
+      "type": "KeyboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": "@deprecated Use `onKeyUp` or `onKeyDown` instead"
+    },
+    {
+      "name": "onKeyPressCapture",
+      "type": "KeyboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": "@deprecated Use `onKeyUpCapture` or `onKeyDownCapture` instead"
+    },
+    {
+      "name": "onKeyUp",
+      "type": "KeyboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onKeyUpCapture",
+      "type": "KeyboardEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAbort",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAbortCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlay",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlayCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlayThrough",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onCanPlayThroughCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDurationChange",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDurationChangeCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEmptied",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEmptiedCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEncrypted",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEncryptedCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEnded",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onEndedCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedData",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedDataCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedMetadata",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadedMetadataCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadStart",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoadStartCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPause",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPauseCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlay",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlayCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlaying",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPlayingCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onProgress",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onProgressCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onRateChange",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onRateChangeCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeeked",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeekedCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeeking",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSeekingCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onStalled",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onStalledCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSuspend",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSuspendCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTimeUpdate",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTimeUpdateCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onVolumeChange",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onVolumeChangeCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWaiting",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWaitingCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAuxClick",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAuxClickCapture",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onClick",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onClickCapture",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onContextMenu",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onContextMenuCapture",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDoubleClick",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDoubleClickCapture",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDrag",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragCapture",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEnd",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEndCapture",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEnter",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragEnterCapture",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragExit",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragExitCapture",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragLeave",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragLeaveCapture",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragOver",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragOverCapture",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragStart",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDragStartCapture",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDrop",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onDropCapture",
+      "type": "DragEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseDown",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseDownCapture",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseEnter",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseLeave",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseMove",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseMoveCapture",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOut",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOutCapture",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOver",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseOverCapture",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseUp",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onMouseUpCapture",
+      "type": "MouseEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSelect",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSelectCapture",
+      "type": "ReactEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchCancel",
+      "type": "TouchEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchCancelCapture",
+      "type": "TouchEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchEnd",
+      "type": "TouchEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchEndCapture",
+      "type": "TouchEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchMove",
+      "type": "TouchEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchMoveCapture",
+      "type": "TouchEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchStart",
+      "type": "TouchEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTouchStartCapture",
+      "type": "TouchEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerDown",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerDownCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerMove",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerMoveCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerUp",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerUpCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerCancel",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerCancelCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerEnter",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerLeave",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOver",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOverCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOut",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onPointerOutCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onGotPointerCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onGotPointerCaptureCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLostPointerCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLostPointerCaptureCapture",
+      "type": "PointerEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onScroll",
+      "type": "UIEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onScrollCapture",
+      "type": "UIEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWheel",
+      "type": "WheelEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onWheelCapture",
+      "type": "WheelEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationStart",
+      "type": "AnimationEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationStartCapture",
+      "type": "AnimationEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationEnd",
+      "type": "AnimationEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationEndCapture",
+      "type": "AnimationEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationIteration",
+      "type": "AnimationEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onAnimationIterationCapture",
+      "type": "AnimationEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTransitionEnd",
+      "type": "TransitionEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onTransitionEndCapture",
+      "type": "TransitionEventHandler<HTMLDivElement>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "ref",
+      "type": "LegacyRef<HTMLDivElement>",
+      "required": false,
+      "description": "Allows getting a ref to the component instance.\nOnce the component unmounts, React will set `ref.current` to `null`\n(or call the ref with `null` if you passed a callback ref).\n@see {@link https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom React Docs}"
+    },
+    {
+      "name": "key",
+      "type": "Key",
+      "required": false,
+      "description": ""
+    }
+  ]
+}
